@@ -20,6 +20,7 @@ Poiesis Deployment Summary:
 Services Used & Access Information:
 
 Poiesis API:
+  {{ if .Values.poiesis.ingress.enabled }}URL: {{ .Values.poiesis.ingress.host }}{{ end }}
   Service Name: {{ printf "%s-%s" (include "poiesis.fullname" .) "api" }}
   Port: {{ .Values.poiesis.service.port }}
   Access: Type '{{ .Values.poiesis.service.type }}'.

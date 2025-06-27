@@ -35,6 +35,11 @@ poiesis:
     # The tag of the Docker image to use (e.g., "latest", "v0.1.0"). "latest" is generally not recommended for production.
     tag: "latest"
 
+  ingress:
+    enabled: false
+    host: ""
+    ingressClassName: ""
+
   # Configuration for the Kubernetes Service exposing the Poiesis application.
   service:
     # The type of Kubernetes Service (e.g., ClusterIP, NodePort, LoadBalancer).
