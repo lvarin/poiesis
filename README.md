@@ -57,6 +57,13 @@ To install Poiesis into your Kubernetes cluster using Helm:
    cd deployment/helm
    ```
 
+1. Install dependencies:
+
+  ```bash
+  helm repo add bitnami https://charts.bitnami.com/bitnami
+  helm dependency build
+  ```
+
 1. Run the following command to install Poiesis:
 
    ```bash
